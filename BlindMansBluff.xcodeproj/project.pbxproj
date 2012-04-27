@@ -18,6 +18,7 @@
 		38DE460C146A19BC00D54521 /* BlindMansBluffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE460B146A19BC00D54521 /* BlindMansBluffViewController.m */; };
 		38DE460F146A19BC00D54521 /* BlindMansBluffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DE460D146A19BC00D54521 /* BlindMansBluffViewController.xib */; };
 		38DE4617146A19D600D54521 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE4616146A19D600D54521 /* Card.m */; };
+		C5FCDA83154B390300E50983 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FCDA82154B390300E50983 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		38DE460E146A19BC00D54521 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BlindMansBluffViewController.xib; sourceTree = "<group>"; };
 		38DE4615146A19D600D54521 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		38DE4616146A19D600D54521 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		C5FCDA81154B390300E50983 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C5FCDA82154B390300E50983 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		38DE45E6146A19BB00D54521 = {
 			isa = PBXGroup;
 			children = (
+				C5FCDA81154B390300E50983 /* Player.h */,
+				C5FCDA82154B390300E50983 /* Player.m */,
 				38DE45FB146A19BC00D54521 /* BlindMansBluff */,
 				38DE45F4146A19BC00D54521 /* Frameworks */,
 				38DE45F2146A19BC00D54521 /* Products */,
@@ -179,6 +184,7 @@
 				38DE460C146A19BC00D54521 /* BlindMansBluffViewController.m in Sources */,
 				38DE4617146A19D600D54521 /* Card.m in Sources */,
 				380F51E914A221230013B8A8 /* Deck.m in Sources */,
+				C5FCDA83154B390300E50983 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
