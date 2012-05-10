@@ -20,11 +20,34 @@
 }
 
 
--(void)logThisCard
+-(NSString *)valueAsString
 {
-    NSLog(@"%d of %@",value,suit);
-    NSLog(@"Located at %.1f,%.1f",cardCenter.x, cardCenter.y);
+    switch (self.value) {
+        case 14:
+            return @"Ace";
+            break;
+        case 13:
+            return @"King";
+            break;
+        case 12:
+            return @"Queen";
+            break;
+        case 11:
+            return @"Jack";
+            break;
+            
+        default:
+            return [NSString stringWithFormat:@"%d",self.value];
+            break;
+    }
 }
+
+-(void)cardDescription
+{
+    NSLog(@"%@ of %@", self.valueAsString, self.suit);
+}
+
+
 
 
 @end

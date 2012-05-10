@@ -13,7 +13,8 @@
 @property int value;
 @property CGPoint cardCenter;
 
--(void)logThisCard;
+-(NSString *)valueAsString;
+-(void)cardDescription;
 -(id)initWithSuit:(NSString *)newSuit
      andWithValue:(int)cardValue
     andWithCenter:(CGPoint)theCenter;

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		380F51E914A221230013B8A8 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F51E814A221230013B8A8 /* Deck.m */; };
+		3878018A155C17AD00EDDDBD /* backOfCard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38780189155C17AD00EDDDBD /* backOfCard.jpg */; };
+		3878018D155C17B500EDDDBD /* cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 3878018C155C17B500EDDDBD /* cards.png */; };
 		38DE45F6146A19BC00D54521 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE45F5146A19BC00D54521 /* UIKit.framework */; };
 		38DE45F8146A19BC00D54521 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE45F7146A19BC00D54521 /* Foundation.framework */; };
 		38DE45FA146A19BC00D54521 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE45F9146A19BC00D54521 /* CoreGraphics.framework */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		380F51E714A221230013B8A8 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		380F51E814A221230013B8A8 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		38780189155C17AD00EDDDBD /* backOfCard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backOfCard.jpg; sourceTree = "<group>"; };
+		3878018C155C17B500EDDDBD /* cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cards.png; sourceTree = "<group>"; };
 		38DE45F1146A19BC00D54521 /* BlindMansBluff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindMansBluff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DE45F5146A19BC00D54521 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		38DE45F7146A19BC00D54521 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +96,8 @@
 		38DE45FB146A19BC00D54521 /* BlindMansBluff */ = {
 			isa = PBXGroup;
 			children = (
+				38780189155C17AD00EDDDBD /* backOfCard.jpg */,
+				3878018C155C17B500EDDDBD /* cards.png */,
 				38DE4604146A19BC00D54521 /* BlindMansBluffAppDelegate.h */,
 				38DE4605146A19BC00D54521 /* BlindMansBluffAppDelegate.m */,
 				38DE4607146A19BC00D54521 /* MainWindow.xib */,

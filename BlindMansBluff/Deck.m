@@ -41,7 +41,7 @@
     //0 for the start of an array
     for (int i = 0; i< [cardDeck count]; i++) 
     {
-        [[cardDeck objectAtIndex:i] logThisCard];
+        [[cardDeck objectAtIndex:i] cardDescription];
     }
 }
 -(void)shuffle
@@ -60,13 +60,14 @@
         Card * tempCard = [cardDeck objectAtIndex:0];
         Card * tempCard2 = [cardDeck objectAtIndex:1];
         Card * tempCard3 = [cardDeck objectAtIndex:2];
-        [tempCard logThisCard];
-        [tempCard2 logThisCard];
-        [tempCard3 logThisCard];
+        [tempCard cardDescription];
+        [tempCard2 cardDescription];
+        [tempCard3 cardDescription];
     }
-    
-        
+    [self performSelectorOnMainThread:@selector(animateDeal:) withObject:cardDeck waitUntilDone:YES];
 }
+
+    
 
 
 @end
