@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Card.h"
 
+
 @interface Deck : NSObject
 
 
@@ -17,5 +18,4 @@
 -(void)logThisDeck;
 -(void)shuffle;
 -(void)dealACard;
-
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Player : UIView
+-(void)animateDeal:(NSArray *)array;
 
 @end

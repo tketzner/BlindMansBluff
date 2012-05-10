@@ -27,5 +27,9 @@
     // Drawing code
 }
 */
+-(void)animateDeal:(NSArray *)array;
+{
+    
+}
 
 @end
