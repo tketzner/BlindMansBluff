@@ -64,7 +64,8 @@
         [tempCard2 cardDescription];
         [tempCard3 cardDescription];
     }
-    [self performSelectorOnMainThread:@selector(animateDeal:) withObject:cardDeck waitUntilDone:YES];
+   // [self performSelectorOnMainThread:@selector(animateDeal:) withObject:cardDeck waitUntilDone:YES];
+    // Jeremy had me comment this out it wasnt letting the program run
 }
 
     
