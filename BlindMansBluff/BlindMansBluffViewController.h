@@ -13,4 +13,6 @@
 
 @interface BlindMansBluffViewController : UIViewController
 @property (nonatomic, strong) Deck * temp;
+@property (nonatomic, strong) UIView * cardArea;
+@property (nonatomic, strong) UIImageView * cardSprite;
 @end

@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		380F51E714A221230013B8A8 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		380F51E814A221230013B8A8 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
-		38780189155C17AD00EDDDBD /* backOfCard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backOfCard.jpg; sourceTree = "<group>"; };
-		3878018C155C17B500EDDDBD /* cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cards.png; sourceTree = "<group>"; };
+		38780189155C17AD00EDDDBD /* backOfCard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backOfCard.jpg; path = ../backOfCard.jpg; sourceTree = "<group>"; };
+		3878018C155C17B500EDDDBD /* cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cards.png; path = ../cards.png; sourceTree = "<group>"; };
 		38DE45F1146A19BC00D54521 /* BlindMansBluff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindMansBluff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DE45F5146A19BC00D54521 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		38DE45F7146A19BC00D54521 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,8 +96,6 @@
 		38DE45FB146A19BC00D54521 /* BlindMansBluff */ = {
 			isa = PBXGroup;
 			children = (
-				38780189155C17AD00EDDDBD /* backOfCard.jpg */,
-				3878018C155C17B500EDDDBD /* cards.png */,
 				38DE4604146A19BC00D54521 /* BlindMansBluffAppDelegate.h */,
 				38DE4605146A19BC00D54521 /* BlindMansBluffAppDelegate.m */,
 				38DE4607146A19BC00D54521 /* MainWindow.xib */,
@@ -129,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				C5F75C93155C357A00A9B909 /* -Dice-Poker-Chip-PC-01-.jpg */,
+				3878018C155C17B500EDDDBD /* cards.png */,
+				38780189155C17AD00EDDDBD /* backOfCard.jpg */,
 				C5B859E2155B6C43008403E8 /* Table.jpg */,
 			);
 			path = blindmanimages;
