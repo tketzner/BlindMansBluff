@@ -18,5 +18,5 @@
 }
 @property BOOL PlayerIsIn;
 @property (nonatomic,strong )Card * currentCard;
-
+-(int)placeBet: (NSArray *)characterArray;
 @end

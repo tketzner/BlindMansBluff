@@ -27,7 +27,12 @@
         {
             return 0;
         }
+        if (tempCard.value <10) {
+            return 10;
+        }
     }
+    //default return
+    return 0;
 }
 
 - (void)didReceiveMemoryWarning
