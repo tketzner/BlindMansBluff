@@ -9,7 +9,7 @@
 #import "Player.h"
 
 @implementation Player
-@synthesize PlayerIsIn;
+@synthesize PlayerIsIn,currentCard;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -18,6 +18,16 @@
         // Custom initialization
     }
     return self;
+}
+
+-(int)placeBet: (NSArray *)characterArray{
+    for ( Player * temp in characterArray) {
+        Card * tempCard = temp.currentCard;
+        if (tempCard.value >10)
+        {
+            return 0;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning

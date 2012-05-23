@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Card.h"
 @interface Player : UIViewController
+
+// players should be in the view controller
 {
     Player * player1;
     Player * player2;
     Player * person;
 }
 @property BOOL PlayerIsIn;
-
+@property (nonatomic,strong )Card * currentCard;
 
 @end
