@@ -12,7 +12,10 @@
 @interface Player : NSObject
 
 @property BOOL PlayerIsIn;
-@property (nonatomic,strong ) Card * currentCard;
+@property (nonatomic, strong) Card * currentCard;
+@property (nonatomic, strong)NSString * type;
+
+-(id)initWithType:(NSString *)playerType;
 
 -(int)placeBet: (NSArray *)characterArray;
 @end

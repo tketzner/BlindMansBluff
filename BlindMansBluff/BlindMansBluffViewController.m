@@ -10,6 +10,13 @@
 
 
 @implementation BlindMansBluffViewController
+@synthesize personCardImage;
+@synthesize player1CardImage;
+@synthesize player2CardImage;
+@synthesize gameInfoLabel;
+@synthesize player1Label;
+@synthesize player2Label;
+@synthesize personLabel;
 @synthesize temp, player1, player2, person;
 
 
@@ -30,13 +37,20 @@
     temp = [[Deck alloc]initWithAFullDeck];
     [temp shuffle];
     [temp dealACard];
-       
+    
+
     [super viewDidLoad];
 }
 
-
 - (void)viewDidUnload
 {
+    [self setPlayer1Label:nil];
+    [self setPlayer2Label:nil];
+    [self setPersonLabel:nil];
+    [self setGameInfoLabel:nil];
+    [self setPersonCardImage:nil];
+    [self setPlayer1CardImage:nil];
+    [self setPlayer2CardImage:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -49,4 +63,9 @@
     return interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation ==UIInterfaceOrientationLandscapeRight;
 }
 
+- (IBAction)personBetButton:(id)sender {
+}
+- (IBAction)dealCardsButton:(id)sender {
+        
+}
 @end

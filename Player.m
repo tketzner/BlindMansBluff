@@ -9,15 +9,12 @@
 #import "Player.h"
 
 @implementation Player
-@synthesize PlayerIsIn,currentCard;
+@synthesize PlayerIsIn, currentCard, type;
 
--(id)init
+-(id)initWithType:(NSString *)playerType
 {
     self = [super init];
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-       
-    });
+    self.type = playerType;
     return self;
 }
 

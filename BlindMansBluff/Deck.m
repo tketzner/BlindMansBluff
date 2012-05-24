@@ -22,6 +22,7 @@
     // int i = 1 for Ace, 13 cards in a suit
     for (int i = 1; i<=13; i++) 
     {
+        
         Card * temp1 = [[Card alloc] initWithSuit:@"Clubs" andWithValue:i andWithCenter:CGPointMake(1, 1)];
         Card * temp2 = [[Card alloc] initWithSuit:@"Spades" andWithValue:i andWithCenter:CGPointMake(1, 1)];
         Card * temp3 = [[Card alloc] initWithSuit:@"Diamonds" andWithValue:i andWithCenter:CGPointMake(1, 1)];
