@@ -11,6 +11,7 @@
 @implementation Deck
 @synthesize cardDeck;
 
+
 -(id)initWithAFullDeck
 {
     
@@ -19,8 +20,8 @@
         cardDeck = [[NSMutableArray alloc]initWithCapacity:52];
     }
     
-    // int i = 1 for Ace, 13 cards in a suit
-    for (int i = 1; i<=13; i++) 
+    // int i = 14 for Ace, 13 cards in a suit
+    for (int i = 2; i<=14; i++) 
     {
         
         Card * temp1 = [[Card alloc] initWithSuit:@"Clubs" andWithValue:i andWithCenter:CGPointMake(1, 1)];
@@ -65,8 +66,6 @@
         [tempCard2 cardDescription];
         [tempCard3 cardDescription];
     }
-   // [self performSelectorOnMainThread:@selector(animateDeal:) withObject:cardDeck waitUntilDone:YES];
-    // Jeremy had me comment this out it wasnt letting the program run
 }
 
     

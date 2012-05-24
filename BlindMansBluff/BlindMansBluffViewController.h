@@ -25,7 +25,12 @@
 //Game info label for alerting person of betting turn and winner of game - TK
 @property (strong, nonatomic) IBOutlet UILabel *gameInfoLabel;
 - (IBAction)dealCardsButton:(id)sender;
-@property (strong, nonatomic) IBOutlet UIImageView *personCardImage;
-@property (strong, nonatomic) IBOutlet UIImageView *player1CardImage;
-@property (strong, nonatomic) IBOutlet UIImageView *player2CardImage;
+@property (strong, nonatomic) UIImageView *personCardImage;
+@property (strong, nonatomic) UIView *personCard;
+@property (strong, nonatomic) UIImageView *player1CardImage;
+@property (strong, nonatomic) UIView *player1Card;
+@property (strong, nonatomic) UIImageView *player2CardImage;
+@property (strong, nonatomic) UIView *player2Card;
+
+
 @end

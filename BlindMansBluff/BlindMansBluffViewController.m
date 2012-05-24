@@ -17,7 +17,7 @@
 @synthesize player1Label;
 @synthesize player2Label;
 @synthesize personLabel;
-@synthesize temp, player1, player2, person;
+@synthesize temp, player1, player2, person, player1Card, player2Card, personCard;
 
 
 - (void)didReceiveMemoryWarning
@@ -34,9 +34,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    temp = [[Deck alloc]initWithAFullDeck];
-    [temp shuffle];
-    [temp dealACard];
+    
     
 
     [super viewDidLoad];
@@ -64,8 +62,43 @@
 }
 
 - (IBAction)personBetButton:(id)sender {
+    
 }
 - (IBAction)dealCardsButton:(id)sender {
+    temp = [[Deck alloc]initWithAFullDeck];
+    [temp shuffle];
+    [temp dealACard];
+    
+    personCardImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backOfCard.png"]];
+    personCard = [[UIView alloc] initWithFrame:CGRectMake(474, 260, 75.0, 100.0)];
+    personCard.clipsToBounds = YES;
+    [personCard addSubview:personCardImage];
+    [self.view addSubview:personCard];
+    
+    player1CardImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cards.png"]];
+    player1Card = [[UIView alloc] initWithFrame:CGRectMake(278, 260, 75.0, 100.0)];
+    player1Card.clipsToBounds = YES;
+    [player1Card addSubview:player1CardImage];
+    [self.view addSubview:player1Card];
+    
+    player2CardImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cards.png"]];
+    player2Card = [[UIView alloc] initWithFrame:CGRectMake(661, 260, 75.0, 100.0)];
+    player2Card.clipsToBounds = YES;
+    [player2Card addSubview:player2CardImage];
+    [self.view addSubview:player2Card];
+    
+    // Figure out if the first object is a player or live person
+  //  if (!personCardImage) {
+        [UIImage imageNamed:@"cards.png"];
+  //  }else{
+        // Live Person card, so show the back
+  //      [UIImage imageNamed:@"backOfCard.jpg"];
+        
+  //  }
+    
+          
         
 }
+
+
 @end
