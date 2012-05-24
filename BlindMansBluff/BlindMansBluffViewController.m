@@ -10,7 +10,7 @@
 
 
 @implementation BlindMansBluffViewController
-@synthesize temp;
+@synthesize temp, player1, player2, person;
 
 
 - (void)didReceiveMemoryWarning
