@@ -20,7 +20,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *player1Label;
 @property (strong, nonatomic) IBOutlet UILabel *player2Label;
 @property (strong, nonatomic) IBOutlet UILabel *personLabel;
+//Player1, player2 and personLabel to identify $ of bets  - TK
 - (IBAction)personBetButton:(id)sender;
+//Game info label for alerting person of betting turn and winner of game - TK
 @property (strong, nonatomic) IBOutlet UILabel *gameInfoLabel;
 - (IBAction)dealCardsButton:(id)sender;
 @property (strong, nonatomic) IBOutlet UIImageView *personCardImage;
