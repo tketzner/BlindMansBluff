@@ -35,6 +35,10 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Press deal to start game" message:@"Let's Play" delegate:person cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    
     temp = [[Deck alloc]initWithAFullDeck];
     player1 = [[Player alloc]init];
     player2 = [[Player alloc]init];
@@ -46,7 +50,9 @@
     player1.chips = 50;
     player2.chips = 50;
     dealer.chips = 50;
-    [self updateChipsCountView];    
+    [self updateChipsCountView];  
+    
+   
 
     [super viewDidLoad];
 }
@@ -74,12 +80,18 @@
 }
 
 - (IBAction)personBetButton:(id)sender {
-    //Increment dealer chips
+    //Increment dealer bet
     dealer.chips+=10;
     self.personLabel.text = [[NSNumber numberWithInt:dealer.chips] stringValue];
+    //End of code created by TK
+
     
 }
 - (IBAction)dealCardsButton:(id)sender {
+    NSURL * deal = [[NSBundle mainBundle] URLForResource:@"Deal" withExtension:@"wav"];
+    dealSound = [[AVAudioPlayer alloc] initWithContentsOfURL:deal error:nil];
+    
+    [dealSound play];
     [temp shuffle];
     [temp dealACard];
     
@@ -101,18 +113,9 @@
     [player2Card addSubview:player2CardImage];
     [self.view addSubview:player2Card];
     
-    // Figure out if the first object is a player or live person
-  //  if (!personCardImage) {
-        [UIImage imageNamed:@"cards.png"];
-  //  }else{
-        // Live Person card, so show the back
-  //      [UIImage imageNamed:@"backOfCard.jpg"];
-        
-  //  }
-    
-
-        
-}
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Place bets" message:@"Do you want to bet?" delegate:person cancelButtonTitle:@"Fold" otherButtonTitles:@"Bet",nil];
+    [alert show];
+    }
 
 -(void)updateChipsCountView
 {

@@ -8,15 +8,22 @@
 
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+
 #import "Deck.h"
 #import "Player.h"
 
 
 @interface BlindMansBluffViewController : UIViewController
+{
+    AVAudioPlayer *dealSound;
+}
+
 @property (nonatomic, strong) Deck * temp;
 @property (nonatomic, strong) Player * player1;
 @property (nonatomic, strong) Player * player2;
 @property (nonatomic, strong) Player * person;
+
 @property (strong, nonatomic) IBOutlet UILabel *player1Label;
 @property (strong, nonatomic) IBOutlet UILabel *player2Label;
 @property (strong, nonatomic) IBOutlet UILabel *personLabel;

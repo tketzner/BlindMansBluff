@@ -19,6 +19,7 @@
     return self;
 }
 
+//Code created by Tabetha Ketzner
 
 -(NSString *)valueAsString
 {
@@ -47,7 +48,7 @@
     NSLog(@"%@ of %@", self.valueAsString, self.suit);
 }
 
-
+//End of code created by Tabetha Ketzner
 
 
 @end
