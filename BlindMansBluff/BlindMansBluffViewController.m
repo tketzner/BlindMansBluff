@@ -74,10 +74,12 @@
 }
 
 - (IBAction)personBetButton:(id)sender {
+    //Increment dealer chips
+    dealer.chips+=10;
+    self.personLabel.text = [[NSNumber numberWithInt:dealer.chips] stringValue];
     
 }
 - (IBAction)dealCardsButton:(id)sender {
-    temp = [[Deck alloc]initWithAFullDeck];
     [temp shuffle];
     [temp dealACard];
     

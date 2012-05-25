@@ -19,9 +19,9 @@
 		38DE460F146A19BC00D54521 /* BlindMansBluffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DE460D146A19BC00D54521 /* BlindMansBluffViewController.xib */; };
 		38DE4617146A19D600D54521 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE4616146A19D600D54521 /* Card.m */; };
 		38EB1AAD156E953C00CB08B9 /* backOfCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EB1AAC156E953C00CB08B9 /* backOfCard.png */; };
+		38F567981570264700432111 /* Deal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38F567971570264700432111 /* Deal.wav */; };
 		C5060E5C15487416004A36E8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C5060E5B15487416004A36E8 /* Player.m */; };
 		C51DE197156F154F00F8E6F0 /* Poker-Chips-psd31581.png in Resources */ = {isa = PBXBuildFile; fileRef = C51DE196156F154F00F8E6F0 /* Poker-Chips-psd31581.png */; };
-		C51DE19D156F27F700F8E6F0 /* 04 Poker Face.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C51DE19C156F27F700F8E6F0 /* 04 Poker Face.m4a */; };
 		C5B859E3155B6C43008403E8 /* Table.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5B859E2155B6C43008403E8 /* Table.jpg */; };
 /* End PBXBuildFile section */
 
@@ -46,10 +46,10 @@
 		38DE4615146A19D600D54521 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		38DE4616146A19D600D54521 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		38EB1AAC156E953C00CB08B9 /* backOfCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backOfCard.png; sourceTree = "<group>"; };
+		38F567971570264700432111 /* Deal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Deal.wav; sourceTree = "<group>"; };
 		C5060E5A15487416004A36E8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Player.h; sourceTree = "<group>"; };
 		C5060E5B15487416004A36E8 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = ../Player.m; sourceTree = "<group>"; };
 		C51DE196156F154F00F8E6F0 /* Poker-Chips-psd31581.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Poker-Chips-psd31581.png"; sourceTree = "<group>"; };
-		C51DE19C156F27F700F8E6F0 /* 04 Poker Face.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "04 Poker Face.m4a"; sourceTree = "<group>"; };
 		C5B859E2155B6C43008403E8 /* Table.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Table.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,6 @@
 				38DE460A146A19BC00D54521 /* BlindMansBluffViewController.h */,
 				38DE460B146A19BC00D54521 /* BlindMansBluffViewController.m */,
 				38DE460D146A19BC00D54521 /* BlindMansBluffViewController.xib */,
-				C51DE19C156F27F700F8E6F0 /* 04 Poker Face.m4a */,
 				C5B859E1155B6C43008403E8 /* blindmanimages */,
 				38DE45FC146A19BC00D54521 /* Supporting Files */,
 			);
@@ -130,6 +129,7 @@
 		C5B859E1155B6C43008403E8 /* blindmanimages */ = {
 			isa = PBXGroup;
 			children = (
+				38F567971570264700432111 /* Deal.wav */,
 				C51DE196156F154F00F8E6F0 /* Poker-Chips-psd31581.png */,
 				3878018C155C17B500EDDDBD /* cards.png */,
 				38EB1AAC156E953C00CB08B9 /* backOfCard.png */,
@@ -194,7 +194,7 @@
 				C5B859E3155B6C43008403E8 /* Table.jpg in Resources */,
 				38EB1AAD156E953C00CB08B9 /* backOfCard.png in Resources */,
 				C51DE197156F154F00F8E6F0 /* Poker-Chips-psd31581.png in Resources */,
-				C51DE19D156F27F700F8E6F0 /* 04 Poker Face.m4a in Resources */,
+				38F567981570264700432111 /* Deal.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
