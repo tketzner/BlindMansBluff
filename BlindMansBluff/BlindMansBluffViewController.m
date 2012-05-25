@@ -119,6 +119,10 @@
     personLabel.text = [NSString stringWithFormat: @"$%d",dealer.chips];
  
 }
+-(void)play
+{
+    
+}
 
 
 @end
