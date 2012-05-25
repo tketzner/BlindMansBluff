@@ -10,6 +10,7 @@
 
 @implementation Player
 @synthesize PlayerIsIn, currentCard, type;
+@synthesize name, chips;
 
 -(id)initWithType:(NSString *)playerType
 {

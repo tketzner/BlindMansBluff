@@ -20,8 +20,8 @@
 		38DE4617146A19D600D54521 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE4616146A19D600D54521 /* Card.m */; };
 		38EB1AAD156E953C00CB08B9 /* backOfCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EB1AAC156E953C00CB08B9 /* backOfCard.png */; };
 		C5060E5C15487416004A36E8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C5060E5B15487416004A36E8 /* Player.m */; };
+		C51DE197156F154F00F8E6F0 /* Poker-Chips-psd31581.png in Resources */ = {isa = PBXBuildFile; fileRef = C51DE196156F154F00F8E6F0 /* Poker-Chips-psd31581.png */; };
 		C5B859E3155B6C43008403E8 /* Table.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5B859E2155B6C43008403E8 /* Table.jpg */; };
-		C5F75C94155C357A00A9B909 /* -Dice-Poker-Chip-PC-01-.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5F75C93155C357A00A9B909 /* -Dice-Poker-Chip-PC-01-.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +47,8 @@
 		38EB1AAC156E953C00CB08B9 /* backOfCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backOfCard.png; sourceTree = "<group>"; };
 		C5060E5A15487416004A36E8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Player.h; sourceTree = "<group>"; };
 		C5060E5B15487416004A36E8 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = ../Player.m; sourceTree = "<group>"; };
+		C51DE196156F154F00F8E6F0 /* Poker-Chips-psd31581.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Poker-Chips-psd31581.png"; sourceTree = "<group>"; };
 		C5B859E2155B6C43008403E8 /* Table.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Table.jpg; sourceTree = "<group>"; };
-		C5F75C93155C357A00A9B909 /* -Dice-Poker-Chip-PC-01-.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "-Dice-Poker-Chip-PC-01-.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +127,9 @@
 		C5B859E1155B6C43008403E8 /* blindmanimages */ = {
 			isa = PBXGroup;
 			children = (
+				C51DE196156F154F00F8E6F0 /* Poker-Chips-psd31581.png */,
 				3878018C155C17B500EDDDBD /* cards.png */,
 				38EB1AAC156E953C00CB08B9 /* backOfCard.png */,
-				C5F75C93155C357A00A9B909 /* -Dice-Poker-Chip-PC-01-.jpg */,
 				C5B859E2155B6C43008403E8 /* Table.jpg */,
 			);
 			path = blindmanimages;
@@ -189,8 +189,8 @@
 				38DE4609146A19BC00D54521 /* MainWindow.xib in Resources */,
 				38DE460F146A19BC00D54521 /* BlindMansBluffViewController.xib in Resources */,
 				C5B859E3155B6C43008403E8 /* Table.jpg in Resources */,
-				C5F75C94155C357A00A9B909 /* -Dice-Poker-Chip-PC-01-.jpg in Resources */,
 				38EB1AAD156E953C00CB08B9 /* backOfCard.png in Resources */,
+				C51DE197156F154F00F8E6F0 /* Poker-Chips-psd31581.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

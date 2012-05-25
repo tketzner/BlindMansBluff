@@ -10,6 +10,7 @@
 
 
 @implementation BlindMansBluffViewController
+@synthesize chipLabel;
 @synthesize personCardImage;
 @synthesize player1CardImage;
 @synthesize player2CardImage;
@@ -17,7 +18,7 @@
 @synthesize player1Label;
 @synthesize player2Label;
 @synthesize personLabel;
-@synthesize temp, player1, player2, person, player1Card, player2Card, personCard;
+@synthesize temp, player1, player2, person, player1Card, player2Card, personCard, dealer;
 
 
 - (void)didReceiveMemoryWarning
@@ -34,8 +35,18 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    
-    
+    temp = [[Deck alloc]initWithAFullDeck];
+    player1 = [[Player alloc]init];
+    player2 = [[Player alloc]init];
+    dealer = [[Player alloc]init];
+    //two different ways of placing players below.
+    player1.name = @"Bob";
+    [player2 setName:@"Nancy"];
+    [dealer setName:@"Dealer"];
+    player1.chips = 50;
+    player2.chips = 50;
+    dealer.chips = 50;
+    [self updateChipsCountView];    
 
     [super viewDidLoad];
 }
@@ -49,6 +60,7 @@
     [self setPersonCardImage:nil];
     [self setPlayer1CardImage:nil];
     [self setPlayer2CardImage:nil];
+    [self setChipLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -96,8 +108,16 @@
         
   //  }
     
-          
+
         
+}
+
+-(void)updateChipsCountView
+{
+    player1Label.text = [NSString stringWithFormat: @"$%d",player1.chips];
+    player2Label.text = [NSString stringWithFormat: @"$%d",player2.chips];
+    personLabel.text = [NSString stringWithFormat: @"$%d",dealer.chips];
+ 
 }
 
 

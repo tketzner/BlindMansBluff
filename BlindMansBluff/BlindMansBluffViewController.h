@@ -31,6 +31,10 @@
 @property (strong, nonatomic) UIView *player1Card;
 @property (strong, nonatomic) UIImageView *player2CardImage;
 @property (strong, nonatomic) UIView *player2Card;
+@property(nonatomic, strong) Player * dealer;
+@property (strong, nonatomic) IBOutlet UILabel *chipLabel;
+
+-(void)updateChipsCountView;
 
 
 @end
