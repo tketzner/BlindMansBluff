@@ -14,6 +14,8 @@
 @property BOOL PlayerIsIn;
 @property (nonatomic, strong) Card * currentCard;
 @property (nonatomic, strong)NSString * type;
+@property (nonatomic, strong)NSString * name;
+@property int chips;
 
 -(id)initWithType:(NSString *)playerType;
 
